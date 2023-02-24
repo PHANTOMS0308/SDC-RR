@@ -13,7 +13,7 @@ I am in charge of Ratings & Reviews widget, and I used MongoDB for my backend.
 
 1. Download data from Google Drive
 ```
-bash fetch.sh
+npm run fetch
 ```
 2. Run the ETL(Extract, Transfer, Load) script
 ```
