@@ -31,7 +31,7 @@ const fileNames = [
 
 // Main function for ETL process, insert by batch
 async function ETL(database = 'SDC', batchSize = 5000) {
-  await connect('mongodb://127.0.0.1:27017/' + database);
+  await connect('mongodb://localhost:27017/' + database);
 
   // Drop the reviews and reviewmetas collection if exists
   const collections = (await connection.db.listCollections().toArray()).map(x => x.name);
